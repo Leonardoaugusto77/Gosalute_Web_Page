@@ -6,6 +6,11 @@
   font-family: "Anton", sans-serif;
 }
 
+/* Remover margem do body para eliminar espaços em branco */
+body {
+  margin: 0;
+}
+
 header {
   display: flex;
   width: 100%;
@@ -14,6 +19,11 @@ header {
   background-color: #02f43d;
   justify-content: space-between;
   padding: 0 20px;
+}
+
+/* Remover margem direita do último item do menu */
+.menu li:last-child {
+  margin-right: 0;
 }
 
 .menu ul {
@@ -44,4 +54,20 @@ header {
   max-width: 150px;
   height: auto;
   margin-top: 15px;
+}
+
+/* Remover espaçamento vertical extra nas imagens */
+img {
+  vertical-align: middle;
+}
+
+.class_photo {
+  width: 100%;
+  overflow: hidden; /* Para garantir que a imagem não ultrapasse a largura da tela */
+}
+
+.class_photo img {
+  width: 100vw; /* Define a largura da imagem como 100% da largura da tela do usuário */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove espaços em branco extras abaixo da imagem */
 }
