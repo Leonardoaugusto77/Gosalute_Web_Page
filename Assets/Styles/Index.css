@@ -1,6 +1,8 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box; /* Adicionando esta propriedade para garantir que o padding e a borda não aumentem o tamanho dos elementos */
+  color: #000;
   font-family: "Anton", sans-serif;
 }
 
@@ -11,7 +13,7 @@ header {
   align-items: center;
   background-color: #02f43d;
   justify-content: space-between;
-  padding: 0 10px; /* Adicionando espaçamento de 10px nos cantos do header */
+  padding: 0 20px; /* Aumentando o espaçamento para 20px nos cantos do header */
 }
 
 .menu ul {
@@ -22,22 +24,24 @@ header {
 }
 
 .menu li {
-  margin-right: 100px; /* Reduzindo o espaçamento entre os itens do menu */
+  margin-right: 40px; /* Reduzindo o espaçamento entre os itens do menu para 40px */
 }
 
 .menu a {
   text-decoration: none;
-  color: #fff; /* Alterando a cor do texto do menu */
-  font-size: 20px;
+  font-size: 16px; /* Reduzindo o tamanho da fonte para 16px para garantir que o menu caiba na maioria das telas */
 }
 
 .menu a:hover {
-  color: #000;
-  animation: 5ms;
+  color: #fff; /* Alterando a cor do texto ao passar o mouse */
+}
+
+#logo_img {
+  margin-left: 20px; /* Reduzindo a margem esquerda para 20px */
 }
 
 #logo_img img {
-  width: 150px;
-  margin-left: 100px;
+  max-width: 150px; /* Usando max-width para garantir que o logo não ultrapasse 150px de largura */
+  height: auto; /* Permitindo que a altura seja ajustada automaticamente para manter a proporção do logo */
   margin-top: 15px;
 }
