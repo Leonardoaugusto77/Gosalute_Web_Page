@@ -34,7 +34,7 @@ header {
 }
 
 .menu li {
-  margin-right: 40px;
+  margin-right: 20px; /* Reduzi a margem para 20px para economizar espaço */
 }
 
 .menu a {
@@ -67,7 +67,7 @@ img {
 }
 
 .class_photo img {
-  width: 100vw; /* Define a largura da imagem como 100% da largura da tela do usuário */
+  width: 100%; /* Ajusta a largura da imagem para 100% */
   height: auto; /* Mantém a proporção da imagem */
   display: block; /* Remove espaços em branco extras abaixo da imagem */
 }
@@ -77,10 +77,10 @@ img {
 }
 
 #welcome_message {
-  font-size: 40px;
+  font-size: 3vw; /* Utiliza uma unidade de medida relativa para o tamanho da fonte */
   position: absolute;
-  bottom: 20px; /* Distância de 20 pixels da parte inferior */
-  left: 20px; /* Distância de 20 pixels da parte esquerda */
+  bottom: 10%; /* Distância de 10% da parte inferior */
+  left: 5%; /* Distância de 5% da parte esquerda */
   max-width: 80%; /* Limita a largura do texto a 80% da largura do contêiner pai */
 }
 
@@ -103,6 +103,6 @@ img {
 }
 
 .activities-overlay h2 {
-  font-size: 40px;
+  font-size: 3vw; /* Utiliza uma unidade de medida relativa para o tamanho da fonte */
   text-align: center;
 }
