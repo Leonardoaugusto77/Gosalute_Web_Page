@@ -56,41 +56,41 @@ header {
   margin-top: 15px;
 }
 
-/* Remover espaçamento vertical extra nas imagens */
 img {
+  width: 450px;
   vertical-align: middle;
 }
 
 .class_photo {
   width: 100%;
-  overflow: hidden; /* Para garantir que a imagem não ultrapasse a largura da tela */
+  overflow: hidden;
 }
 
 .class_photo img {
-  width: 100%; /* Ajusta a largura da imagem para 100% */
-  height: auto; /* Mantém a proporção da imagem */
-  display: block; /* Remove espaços em branco extras abaixo da imagem */
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .image-container {
-  position: relative; /* Garante que a posição absoluta seja relativa a este contêiner */
+  position: relative;
 }
 
 #welcome_message {
-  font-size: 3vw; /* Utiliza uma unidade de medida relativa para o tamanho da fonte */
+  font-size: 3vw;
   position: absolute;
-  bottom: 10%; /* Distância de 10% da parte inferior */
-  left: 5%; /* Distância de 5% da parte esquerda */
-  max-width: 80%; /* Limita a largura do texto a 80% da largura do contêiner pai */
+  bottom: 10%;
+  left: 5%;
+  max-width: 80%;
 }
 
 #process_bar {
-  position: absolute; /* Posiciona a barra de processo de forma absoluta */
-  bottom: 0; /* Alinha a barra de processo na parte inferior do contêiner pai */
-  left: 0; /* Alinha a barra de processo na parte esquerda do contêiner pai */
-  width: 100%; /* Define a largura da barra de processo como 100% da largura do contêiner pai */
-  height: 10px; /* Define a altura da barra de processo */
-  background-color: #ff0000; /* Define a cor de fundo da barra de processo */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #ff0000;
 }
 
 .activities-overlay {
@@ -107,7 +107,7 @@ img {
   text-align: center;
 }
 
-#section_from_Activities {
+#section_from_activities {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -116,10 +116,27 @@ img {
   background-color: cadetblue;
 }
 
-.atividade {
+.activity {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 35px;
   margin: auto;
+}
+
+.activity.right {
+  flex-direction: row-reverse;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 25px; /* Adiciona espaçamento lateral de 15px */
+}
+
+.description h3 {
+  width: 350px;
+  font-size: 3vw;
 }
